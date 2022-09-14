@@ -115,12 +115,16 @@ img {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color var(--anim), background-color var(--anim);
+}
+
+.navigation-bar.condition {
+  color: var(--hover-color);
 }
 
 .navigation-list :hover,
 .navigation-list :focus {
   color: var(--hover-color);
-  transition: var(--anim);
 }
 
 .navigation-bar.condition::after,
@@ -128,7 +132,7 @@ img {
   content: '';
 
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
 
   display: block;
@@ -137,7 +141,6 @@ img {
   border-radius: 4px;
   background-color: var(--hover-color);
   color: var(--hover-color);
-  transition: var(--anim);
 }
 
 /* Contacts */
@@ -145,12 +148,10 @@ img {
   margin-left: auto;
 }
 
-.contacts-hover :hover,
-.contacts-hover :focus {
+.contacts-head:hover,
+.contacts-head:focus {
   color: var(--hover-color);
-  transition: var(--anim);
 }
-
 .contacts-head {
   text-decoration: none;
   color: var(--sub-text-color);
@@ -164,6 +165,7 @@ img {
   padding-bottom: 32px;
   align-items: center;
   justify-content: center;
+  transition: color var(--anim);
 }
 .contacts-head + .contacts-head {
   margin-left: 50px;
@@ -216,17 +218,17 @@ img {
   color: #ffffff;
   cursor: pointer;
 
-  padding: 6px 22px;
+  padding: 10px 32px;
   margin: 0 auto;
 
   border: 0px solid transparent;
   border-radius: 4px;
+  transition: background-color var(--anim);
 }
 
 .order-btn:hover,
 .order-btn:focus {
-  background-color: #ffffff;
-  color: var(--hover-color);
+  background-color: #188ce8;
   transition: var(--anim);
 }
 
@@ -381,13 +383,13 @@ img {
   width: 44px;
   height: 44px;
   color: #afb1b8;
+  transition: background-color var(--anim), color var(--anim);
 }
 
 .icon-social:hover,
 .icon-social:focus {
   background-color: var(--hover-color);
   color: #ffffff;
-  transition: var(--anim);
 }
 
 .icon-svg {
@@ -419,27 +421,26 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color var(--anim);
 }
 
 .clients-point:hover,
 .clients-point:focus {
   border-color: var(--hover-color);
-  transition: var(--anim);
 }
 
 .clients-icons {
   fill: #afb1b8;
+  transition: fill var(--anim);
 }
 .clients-point:hover .clients-icons,
 .clients-icons:focus {
   fill: var(--hover-color);
-  transition: var(--anim);
 }
 
 .clients-icons:hover,
 .clients-icons:focus {
   fill: var(--hover-color);
-  transition: var(--anim);
 }
 /* --------------Page 2---------------- */
 
@@ -464,6 +465,7 @@ img {
 
   border: 0px solid transparent;
   border-radius: 4px;
+  transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
 }
 
 .filter-btn + .filter-btn {
@@ -476,7 +478,6 @@ img {
   background-color: var(--hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: var(--anim);
 }
 
 /* Products */
@@ -537,15 +538,17 @@ img {
   color: #ffffff;
 }
 
+.product-position {
+  transition: box-shadow var(--anim);
+}
+
 .product-position:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: var(--anim);
 }
 
 .product-position:hover .product-list-upper {
   transform: translatey(0);
-  transition: var(--anim);
 }
 
 /* --------------Footer---------------- */
@@ -565,6 +568,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
+  transition: color var(--anim);
 }
 
 .contacts-addrs {
@@ -577,6 +581,17 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2f303a;
+  transition: color var(--anim);
+}
+
+.contacts-addrs:hover,
+.contacts-addrs:focus {
+  color: var(--hover-color);
+}
+
+.contacts-center:hover,
+.contacts-center:focus {
+  color: var(--hover-color);
 }
 
 .contact-foot {
@@ -611,13 +626,12 @@ img {
   width: 44px;
   height: 44px;
   fill: #ffffff;
+  transition: background-color var(--anim);
 }
 
 .foot-icon-social:hover,
 .foot-icon-social:focus {
   background-color: var(--hover-color);
-  fill: #ffffff;
-  transition: var(--anim);
 }
 
 .go-icons {
