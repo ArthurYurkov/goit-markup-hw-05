@@ -414,8 +414,54 @@
                     <svg class="modal-btn-svg" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-close" ></use>
                     </svg>
-                    
                 </button>
+                <form class="input-form">
+                    <p class="form-name">Залиште свої дані, ми вам передзвонимо</p>
+                    <div class="input-name input-all">
+                        <label>
+                            Ім'я
+                        </label>
+                        <input type="text" name="username" class="input-size" />
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                    <div class="input-tell input-all">
+                        <label>
+                            Телефон
+                        </label>
+                        <input type="tell" name="phone_number" class="input-size" />
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <div class="input-email input-all">
+                        <label>
+                            Пошта
+                        </label>
+                        <input type="email" name="email" class="input-size" />
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                    <div class="input-feedback input-all">
+                        <label>
+                            Коментар
+                        </label>
+                        <textarea name="feedback" placeholder="Введіть текст " class="textarea-size"></textarea>
+                    </div>
+                    <label class="input-checkbox">
+                        <input class="input-checkbox-icon" type="checkbox" name="checkbox" />
+                        <svg class="checkbox-icon" width="16" height="15">
+                            <use class="checkbox-icon-check" href="./images/icons.svg#icon-check"></use>
+                            <use class="checkbox-icon-uncheck" href="./images/icons.svg#icon-uncheck"></use>
+                        </svg>
+                        <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></span>
+                    </label>
+                    <button type="submit" class="input-btn">
+                        Відправити
+                    </button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
